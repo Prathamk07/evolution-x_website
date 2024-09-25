@@ -25,7 +25,7 @@ export default function Blog() {
     } finally {
     }
   }
-  
+
   // Fetch individual device data
   const fetchBlog = async () => {
     // Wait for all device data to be fetched
@@ -53,7 +53,7 @@ export default function Blog() {
       const data = await fetchBlogIds()
       setBlogIds(data) // Set state after fetching the device list
       console.log("Fetched devices:", data) // Log the fetched data
-      }      
+      }
       loadBlogs() // Call the async function inside useEffect
     },[])
 
@@ -77,7 +77,7 @@ export default function Blog() {
         setLoading(false)
       }
     }, [blogsList])
-  
+
 
   return (
     <>
@@ -89,13 +89,13 @@ export default function Blog() {
       <div className="inline-flex flex-col items-center justify-center">
         <p className="inline-flex flex-row items-baseline gap-4 text-4xl font-bold lg:text-6xl">
           <img className="h-7 sm:h-8 lg:h-11" src={evolution} alt="" />
-          <span className="text-[#afbdf3]">Blog</span>
+          <span className="font-[Prod-bold] text-[#afbdf3]">Blog</span>
         </p>
       </div>
       <div className="flex w-full flex-col gap-10 rounded-3xl bg-black px-2 py-8 lg:px-14 lg:pb-16">
-        <div className="inline-flex h-9 items-center">
+      <div className="inline-flex h-9 items-center font-[Prod-bold]">
           <hr className="w-9 rotate-90 border-2 border-[#6487fb]" />
-          <p className="text-2xl font-semibold">
+          <p className="text-2xl">
             <span className="text-[#6487fb]">LATEST</span> POSTS
           </p>
         </div>
@@ -130,7 +130,7 @@ export default function Blog() {
             ))}
         </div>
       </div>
-    </div>  
+    </div>
     )}
   </>
   )
