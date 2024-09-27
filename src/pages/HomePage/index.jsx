@@ -13,7 +13,7 @@ const HomePage = () => {
 
   const fetchSS = async () => {
     const url =
-      "https://raw.githubusercontent.com/Prathamk07/evox/refs/heads/main/devices/screenshots.json"
+      "https://raw.githubusercontent.com/Evolution-X/www_gitres/refs/heads/udc/screenshots/screenshots.json"
     try {
       const response = await fetch(url)
       const fetchedSS = await response.json()
@@ -191,7 +191,7 @@ const HomePage = () => {
               {screenshots.map((ss, index) => (
                 <div key={index}>
                   <img
-                    src={`https://github.com/Evolution-X/official_devices/blob/udc/images/screenshots/${ss}?raw=true`}
+                    src={`https://github.com/Evolution-X/www_gitres/blob/udc/screenshots/${ss}?raw=true`}
                     alt=""
                   />
                 </div>
